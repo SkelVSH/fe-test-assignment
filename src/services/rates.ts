@@ -33,7 +33,7 @@ const setCachedRates = (rates: RatesResponse) => {
     LS_RATES_KEY,
     JSON.stringify({
       data: rates,
-      timestamp: Date.now(),
+      timestamp: Date.now().toString(),
     })
   );
 };
