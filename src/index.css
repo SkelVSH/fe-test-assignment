@@ -1,52 +1,47 @@
+@layer reset, base;
+
+:root {
+  --neutral-50: #fafafa;
+  --neutral-300: #d4d4d4;
+  --neutral-500: #737373;
+  --neutral-950: #0a0a0a;
+
+  --green-50: #f0fdf4;
+  --green-200: #b9f8cf;
+  --green-700: #008236;
+
+  --blue-50: #eff6ff;
+  --blue-200: #bedbff;
+  --blue-700: #1447e6;
+
+  --red-50: #fef2f2;
+  --red-200: #ffc9c9;
+  --red-700: #c10007;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  src: url('/fonts/Inter-Variable.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+
+  font-family: 'Inter Variable', sans-serif;
+  color: var(--neutral-950);
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.containter {
+  border: 1px solid var(--neutral-300);
+  border-radius: 16px;
 }
