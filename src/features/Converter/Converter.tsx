@@ -7,8 +7,8 @@ export const Converter = () => {
   const { getRate, currenciesList } = useRates();
   const cachedData = getUserInput();
   const [pair, setPair] = useState({
-    base: cachedData?.base || currenciesList[0].key,
-    target: cachedData?.target || currenciesList[1].key,
+    base: cachedData?.base || currenciesList[0]?.key,
+    target: cachedData?.target || currenciesList[1]?.key,
   });
   const [amount, setAmount] = useState('');
 

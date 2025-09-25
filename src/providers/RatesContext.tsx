@@ -79,7 +79,7 @@ export const RatesProvider = ({ children }: { children: React.ReactNode }) => {
     return () => {
       window.clearInterval(intervalId);
     };
-  }, [updateRates, isOnline]);
+  }, [isOnline, updateRates]);
 
   const currenciesList = useMemo(
     () => Object.keys(data?.rates || {}).map((key) => getCurrencyDetails(key)),
